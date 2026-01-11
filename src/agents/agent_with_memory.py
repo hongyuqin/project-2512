@@ -1,3 +1,4 @@
+import os
 from uuid import uuid4
 
 from agno.agent.agent import Agent
@@ -15,7 +16,7 @@ john_doe_id = "john_doe@example.com"
 
 agent = Agent(
     model=DeepSeek(  # 使用 DeepSeek 官方聊天模型
-            api_key="sk-a19832c6da69445d9f05d04116e0636c"
+            api_key=os.getenv("DEEPSEEK_API_KEY")
         ),
     db=db,
     enable_user_memories=True,

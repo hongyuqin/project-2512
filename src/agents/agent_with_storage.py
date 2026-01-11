@@ -1,3 +1,4 @@
+import os
 from textwrap import dedent
 from typing import List, Optional
 
@@ -50,7 +51,7 @@ def recipe_agent(user: str = "user"):
         user_id=user,
         session_id=session_id,
         model=DeepSeek(  # 使用 DeepSeek 官方聊天模型
-            api_key="sk-a19832c6da69445d9f05d04116e0636c"
+            api_key=os.getenv("DEEPSEEK_API_KEY")
         ),
         instructions=dedent("""\
             You are a passionate and knowledgeable Thai cuisine expert! 🧑‍🍳

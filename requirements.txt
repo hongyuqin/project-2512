@@ -1,0 +1,24 @@
+# Core dependencies
+agno>=0.1.0
+requests>=2.31.0
+rich>=13.7.0
+python-dotenv>=1.0.0
+
+# AI/ML dependencies
+openai>=1.0.0
+sentence-transformers>=2.7.0
+
+# Vector database and search
+lancedb>=0.8.0
+duckduckgo-search>=6.1.0
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# isort>=5.12.0
+# mypy>=1.0.0
+# flake8>=6.0.0

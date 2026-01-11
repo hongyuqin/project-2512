@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 from agno.agent import Agent
@@ -6,7 +7,7 @@ from agno.tools.duckduckgo import DuckDuckGoTools
 
 agent = Agent(
     model=DeepSeek(  # 使用 DeepSeek 官方聊天模型
-            api_key="sk-a19832c6da69445d9f05d04116e0636c"
+            api_key=os.getenv("DEEPSEEK_API_KEY")
         ),
     tools=[DuckDuckGoTools()],
     instructions="You are a customer support agent. You help process customer inquiries efficiently.",

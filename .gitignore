@@ -54,6 +54,14 @@ tmp/lancedb/
 # *.key
 # *.pem
 
+# Environment examples
+env.example
+
+# Build and distribution
+*.egg-info/
+dist/
+build/
+
 # OS
 .DS_Store
 .DS_Store?
